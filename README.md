@@ -1,8 +1,6 @@
 # My Claude Code Configuration
 
-김재현의 Claude Code 설정 파일 모음입니다.
-
-Boris Cherny(창시자), Affaan(해커톤 우승자), 70가지 팁을 참고하여 구성했습니다.
+김재현 님의 클로드 코드 configuration 설정 값입니다. 어디서나 이식해서 사용하세요. 
 
 ## 빠른 설치
 
