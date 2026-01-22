@@ -57,6 +57,7 @@ Shift+Tab → Plan 모드 토글
 | 커맨드 | 용도 |
 |--------|------|
 | `/plan` | 작업 계획 수립 |
+| `/frontend` | 빅테크 스타일 UI 개발 (플래닝→구현) |
 | `/commit-push-pr` | 커밋→푸시→PR 한 번에 |
 | `/verify` | 테스트, 린트, 빌드 검증 |
 | `/review` | 코드 리뷰 |
@@ -70,6 +71,7 @@ Shift+Tab → Plan 모드 토글
 | 에이전트 | 용도 |
 |----------|------|
 | `planner` | 복잡한 기능 계획 |
+| `frontend-developer` | 빅테크 스타일 UI 구현 (React/TS/Tailwind) |
 | `code-reviewer` | 코드 품질/보안 리뷰 |
 | `architect` | 아키텍처 설계 |
 | `security-reviewer` | 보안 취약점 분석 |
@@ -121,6 +123,36 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - [ ] 타입 체크 통과
 - [ ] console.log 제거
 - [ ] 보안 검토 (API 키, 시크릿)
+
+## 설치된 스킬 (~/.agents/skills/)
+
+### Frontend (7개)
+| 스킬 | 용도 |
+|------|------|
+| `vercel-react-best-practices` | React/Next.js 성능 패턴 |
+| `react-patterns` | React 디자인 패턴 |
+| `typescript-advanced-types` | 고급 타입 시스템 |
+| `shadcn-ui` | 커스텀 컴포넌트 |
+| `tailwind-design-system` | Tailwind 시스템 |
+| `ui-ux-pro-max` | UX 종합 가이드 |
+| `web-design-guidelines` | UI 가이드라인/리뷰 |
+
+### Backend - FastAPI/Python (4개)
+| 스킬 | 용도 |
+|------|------|
+| `fastapi-templates` | FastAPI 템플릿/패턴 |
+| `api-design-principles` | REST API 설계 원칙 |
+| `async-python-patterns` | Python 비동기 패턴 |
+| `python-testing-patterns` | Python 테스트 패턴 |
+
+### 워크플로우
+```
+# 프론트엔드
+/frontend [요청사항] → frontend-developer 에이전트 → /verify
+
+# 백엔드는 일반 플래닝 사용
+/plan [요청사항] → 구현 → /verify
+```
 
 ## Claude가 자주 실수하는 것 (여기에 추가)
 <!-- Claude가 실수할 때마다 여기에 규칙 추가 -->

@@ -31,7 +31,16 @@
       "Bash(gh issue:*)",
       "Bash(tsc:*)",
       "Bash(eslint:*)",
-      "Bash(prettier:*)"
+      "Bash(prettier:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(uv:*)",
+      "Bash(uvicorn:*)",
+      "Bash(pytest:*)",
+      "Bash(ruff:*)",
+      "Bash(mypy:*)"
     ],
     "deny": []
   },
